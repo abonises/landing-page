@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/styles/style.scss" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+		<title>Vite App</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<a href="#" class="header__logo logo">HOME PICKER</a>
+					<button class="hamburger" aria-label="Toggle menu">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</button>
+					<nav class="nav">
+						<ul class="nav-list">
+							<li class="nav-list__item item">
+								<a href="#advantages">About us</a>
+							</li>
+							<li class="nav-list__item"><a href="#services">Services</a></li>
+							<li class="nav-list__item"><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="phone-box">
+						<span class="material-symbols-outlined call-icon">call</span
+						><a href="#" class="phone-box__phone">+38 (000) 000 00 00</a>
+					</div>
+				</div>
+				<div class="modal-menu">
+					<button class="close-menu" aria-label="Close menu">✖</button>
+					<h2>MENU</h2>
+					<ul class="modal-nav-list">
+						<li class="modal-nav-list__item">
+							<a href="#advantages">About us</a>
+						</li>
+						<li class="modal-nav-list__item">
+							<a href="#services">Services</a>
+						</li>
+						<li class="modal-nav-list__item">
+							<a href="#contact">Contact us</a>
+						</li>
+					</ul>
+					<div class="modal-phone-box">
+						<span class="material-symbols-outlined call-icon">call</span>
+						<a href="#" class="modal-phone-box__phone">+38 (000) 000 00 00</a>
+					</div>
+				</div>
+				<div class="header-content">
+					<div class="header-info">
+						<h1 class="header-content__title">You dream home</h1>
+						<p class="header-content__text">
+							We will help you find the ideal property
+						</p>
+						<button class="header-content__button button">Contact us</button>
+					</div>
+				</div>
+			</div>
+			<img
+				class="header__image"
+				src="/assets/images/Apartment-Complex-PNG-Image.png"
+				alt="house_png"
+			/>
+		</header>
+		<span class="material-symbols-outlined arrow-separator"
+			>arrow_forward_ios</span
+		>
+		<main class="content">
+			<section class="advantages" id="advantages">
+				<div class="container">
+					<h2 class="advantages__title title">What makes us the best</h2>
+					<div class="advantages-box">
+						<div class="advantages-container">
+							<span class="advantages-container__icon"
+								><span class="material-symbols-outlined">group</span></span
+							>
+							<h3 class="advantages-container__title">
+								Experienced specialists
+							</h3>
+							<p class="advantages-container__text">
+								Our agents will help you every step of the way.
+							</p>
+						</div>
+						<div class="advantages-container">
+							<span class="advantages-container__icon"
+								><span class="material-symbols-outlined">visibility</span></span
+							>
+							<h3 class="advantages-container__title">
+								Transparent transactions
+							</h3>
+							<p class="advantages-container__text">
+								Transparency and trust in every purchase.
+							</p>
+						</div>
+						<div class="advantages-container">
+							<span class="advantages-container__icon"
+								><span class="material-symbols-outlined"
+									>support_agent</span
+								></span
+							>
+							<h3 class="advantages-container__title">Post-support</h3>
+							<p class="advantages-container__text">
+								We stay with you even after the purchase.
+							</p>
+						</div>
+						<div class="advantages-container">
+							<span class="advantages-container__icon"
+								><span class="material-symbols-outlined">apartment</span></span
+							>
+							<h3 class="advantages-container__title">Variety of objects</h3>
+							<p class="advantages-container__text">
+								Find the perfect property for yourself.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<span class="material-symbols-outlined arrow-separator"
+				>arrow_forward_ios</span
+			>
+			<section class="services" id="services">
+				<div class="container">
+					<h2 class="services__title title">Services</h2>
+					<div class="services-container">
+						<div class="services-left-side">
+							<ol class="services-list" id="service-list-animated">
+								<li class="services-list-item">
+									<h4 class="services-list-item__title">
+										Selection of real estate
+									</h4>
+									<p class="services-list-item__text">
+										Individual selection of properties according to your
+										criteria.
+									</p>
+								</li>
+								<li class="services-list-item">
+									<h4 class="services-list-item__title">Grade</h4>
+									<p class="services-list-item__text">
+										Professional assessment of market value.
+									</p>
+								</li>
+								<li class="services-list-item">
+									<h4 class="services-list-item__title">Marketing</h4>
+									<p class="services-list-item__text">
+										Effective strategies for quick sales.
+									</p>
+								</li>
+								<li class="services-list-item">
+									<h4 class="services-list-item__title">Legal support</h4>
+									<p class="services-list-item__text">
+										Protection of interests at all stages.
+									</p>
+								</li>
+								<li class="services-list-item">
+									<h4 class="services-list-item__title">
+										Mortgage consultations
+									</h4>
+									<p class="services-list-item__text">
+										Help in choosing the best loan offers.
+									</p>
+								</li>
+							</ol>
+						</div>
+						<div class="services-right-side">
+							<div class="first-text-box">
+								<h3 class="services-right-side__title">
+									How can we help you find your ideal property?
+								</h3>
+								<p class="services-right-side__text">
+									Our team of experienced real estate professionals takes a
+									personalized approach to each client, ensuring we understand
+									your unique needs, preferences, and lifestyle. Whether you're
+									looking for a family home, a luxury apartment, or an
+									investment property, we offer a diverse selection of options
+									tailored to meet your criteria. With our in-depth market
+									knowledge, we guide you every step of the way, making the
+									process smooth, enjoyable, and efficient so you can feel
+									confident in your choice.
+								</p>
+							</div>
+							<div class="second-text-box">
+								<h3 class="services-right-side__title">
+									Why choose us to sell your property?
+								</h3>
+								<p class="services-right-side__text">
+									Our dedicated team provides a comprehensive range of services,
+									from professional property marketing to accurate valuations
+									and transaction support. We use the latest technology and
+									market insights to strategically promote your property,
+									targeting the right audience and maximizing exposure. Our
+									commitment to transparency and professionalism means we handle
+									negotiations on your behalf, prioritizing your interests to
+									achieve the best possible outcome with minimal stress and
+									risk. With us, you can trust that your property is in expert
+									hands, ensuring a successful sale that meets your goals.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<span class="material-symbols-outlined arrow-separator"
+				>arrow_forward_ios</span
+			>
+			<section class="objects">
+				<div class="object-container">
+					<h2 class="objects__title title">Our Objects</h2>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img
+									src="/assets/images/objects/pexels-expect-best-79873-323705.jpg"
+									alt="Photo 1"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="/assets/images/objects/pexels-florencia-potter-82066-324629.jpg"
+									alt="Photo 2"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="/assets/images/objects/pexels-igor-starkov-233202-1693946.jpg"
+									alt="Photo 3"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="/assets/images/objects/pexels-sevenstormphotography-439391.jpg"
+									alt="Photo 4"
+								/>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<p class="objects__text">
+						"We offer a wide selection of properties: from cozy apartments to
+						luxury houses. Find your ideal home with us!"
+					</p>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" id="contact">
+			<div class="container">
+				<div class="footer-info-container">
+					<div class="contacts">
+						<h2 class="contacts__title">Contact information</h2>
+						<div class="contacts-info">
+							<ul class="contacts-info__list">
+								<li class="contacts-info__item">
+									<p class="contacts-info__item-title">Address</p>
+									<p class="contacts-info__item-text">
+										Odesa <br />
+										Street #1, Home #1
+									</p>
+								</li>
+								<li class="contacts-info__item">
+									<p class="contacts-info__item-title">Work Time</p>
+									<p class="contacts-info__item-text">
+										Mon-Sat: from 9:00 to 19:00, <br />
+										Sun: Day Off
+									</p>
+								</li>
+								<li class="contacts-info__item">
+									<p class="contacts-info__item-title">Phone</p>
+									<p class="contacts-info__item-text">+38 (000) 000 00 00</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="follow-us">
+						<h2 class="follow-us__title">Follow Us</h2>
+						<div class="social-links">
+							<a href="#">
+								<div class="social-links__item">
+									<ion-icon
+										class="socials-link__icon"
+										name="logo-instagram"
+									></ion-icon>
+								</div>
+							</a>
+							<a href="#">
+								<div class="social-links__item">
+									<ion-icon
+										class="socials-link__icon"
+										name="logo-twitter"
+									></ion-icon>
+								</div>
+							</a>
+							<a href="#">
+								<div class="social-links__item">
+									<ion-icon
+										class="socials-link__icon"
+										name="logo-youtube"
+									></ion-icon>
+								</div>
+							</a>
+							<a href="#">
+								<div class="social-links__item">
+									<ion-icon
+										class="socials-link__icon"
+										name="logo-facebook"
+									></ion-icon>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="footer-contact-form">
+						<form class="contacts-form">
+							<h2 class="contacts-form__title">We are Ready to Help!</h2>
+							<input
+								class="contacts-form__input"
+								type="text"
+								placeholder="Your Name?"
+							/>
+							<input
+								class="contacts-form__input"
+								type="email"
+								placeholder="You Email"
+							/>
+							<button class="contacts-form__button button" type="submit">
+								Send
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="module" src="src/js/main.js"></script>
+	</body>
+</html>
